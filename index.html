@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather App</title>
+    <link rel="stylesheet" href="./css/style.css" />
+    <script src="./js/app.js" defer></script>
+  </head>
+  <body>
+    <!-- Container start -->
+    <div class="container">
+      <!-- Heading start -->
+      <div class="heading">
+        <h1>Weather App</h1>
+      </div>
+      <!-- Heading end -->
+      <!-- Search start -->
+      <div class="search">
+        <input
+          id="searchInput"
+          type="text"
+          spellcheck="false"
+          placeholder="Search weather of specific location (ex:Dhaka)"
+        />
+        <input id="searchBtn" type="submit" value="Search" />
+      </div>
+      <!-- Search end -->
+      <!-- Preview start -->
+      <div class="preview">
+        <div class="content">
+          <h3 class="tempLocation">Current weather at <span></span></h3>
+          <img class="tempIcon" src="" alt="" />
+          <h1 class="tempCurrent"></h1>
+          <p class="tempDescription"></p>
+        </div>
+      </div>
+      <!-- Preview end -->
+    </div>
+    <!-- Container end -->
+  </body>
+</html>

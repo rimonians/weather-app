@@ -1,0 +1,106 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,200;0,400;0,500;0,600;0,700;0,800;0,900;1,900&family=Roboto+Slab:wght@100;300&display=swap");
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+  outline: none;
+  border: none;
+  letter-spacing: 1px;
+  font-family: "Roboto Slab", serif;
+  user-select: none;
+}
+::placeholder {
+  color: #fff;
+}
+body {
+  min-height: 100vh;
+  width: 100%;
+  background: linear-gradient(
+      to right,
+      rgba(1, 16, 32, 0.829),
+      rgba(1, 7, 26, 0.877)
+    ),
+    url("../images/bg.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.container {
+  width: 80%;
+  margin: 0 auto;
+  padding: 1rem;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.heading h1 {
+  color: #fff;
+  text-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+}
+.search {
+  display: flex;
+  align-items: center;
+}
+#searchInput {
+  flex: 1;
+  padding: 1rem;
+  border-radius: 0.5rem 0 0 0.5rem;
+  font-weight: 600;
+  background: rgba(255, 255, 255, 0.2);
+  color: #fff;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+}
+#searchBtn {
+  padding: 1rem 2rem;
+  border-radius: 0 0.5rem 0.5rem 0;
+  font-weight: 600;
+  background: linear-gradient(to right, dodgerblue, royalblue);
+  color: #fff;
+  cursor: pointer;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+}
+.content {
+  display: none;
+  flex-direction: column;
+  gap: 1rem;
+}
+.show {
+  display: flex;
+}
+.tempLocation {
+  color: #fff;
+  text-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+}
+.tempLocation span {
+  color: dodgerblue;
+  text-transform: uppercase;
+  font-weight: 900;
+}
+.tempIcon {
+  height: 200px;
+  width: 200px;
+  margin: 0 auto;
+}
+.tempCurrent {
+  font-size: 2.5rem;
+  color: #fff;
+  text-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+}
+.tempDescription {
+  color: dodgerblue;
+  font-weight: 600;
+}
+
+@media (max-width: 768px) {
+  .container {
+    width: 90%;
+  }
+  #searchBtn {
+    padding: 1rem;
+  }
+}
